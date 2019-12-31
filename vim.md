@@ -1,6 +1,6 @@
-# vim 操作命令
+# vim 基础教程
 
-## vim 的四种模式
+## vim 的五种模式
 
 ### 1 普通模式
 
@@ -23,6 +23,9 @@
 - 切换到编辑模式
   - i 在光标前插入
   - a 在光标后插入
+  - A 在当前行最后插入内容
+  - o 在光标下插入一行
+  - O 在光标上插入一行
 
 ### 3 命令模式
 
@@ -45,12 +48,26 @@
   - V 逐行选择文本
   - `CTRL + v` 按照块的方式选择文本
 
+### 5 替换模式
+
+- 作用
+
+  内容更改替换
+
+- R
+
+  在光标位置使用 R，将进入 `replace` 模式，输入的内容将原内容进行一一替换
+
 ## 移动
 
 - j 下（坠落的感觉）
 - k 上（飞的感觉）
 - l 右
 - h 左
+
+- e 向右逐词移动到下一个单词的结尾
+- w 向右逐词移动下一个单词的开头
+- b 向左逐词移动到下一个单词的开头
 
 - gg 移动到文档顶部
 - G 移动至文档底部
@@ -61,14 +78,17 @@
 
 - y 复制
 - yy 复制一行
+- yw/ye 复制一个光标到结尾的单词
+- yb 复制一个光标到开头的结尾
+- v + y 使用 v 进入 visual 模式，选中内容，再通过 y 复制选中的内容
 
 ## 删除
 
 ```shell
-# 命令： 操作 + 数字 + 动作
-  operator [number] motion
-# 删除命令
-  d  [number] motion
+  命令公式:
+    operator [number] motion # 命令： 操作 + 数字 + 动作
+  如：
+    d  [number] motion # 删除命令
 ```
 
 - x 删除光标所在处字符
@@ -82,6 +102,11 @@
 - d\$ 删除光标位置到本行行尾
 - dd 删除一行
 - ndd 删除 N 行
+
+```shell
+例子:
+  3dw 删除到第三个单词的开头
+```
 
 ## 恢复/撤销
 
@@ -99,10 +124,12 @@
 - p 使用`d`操作的内容，可以使用`p`进行粘贴
 - rx 将光标位置的字母替换为 x
 - ce 删除光标位置到单词结尾，并切换到 `insert` 模式，`c` 的更改命令和 `d` 类似
+- R 在光标位置使用 R，将进入 `replace` 模式，输入的内容将原内容进行一一替换
 
 ```shell
-# 命令： 操作 + 数字 + 动作
-  operator [number] motion
+命令公式：
+  operator [number] motion # 命令： 操作 + 数字 + 动作
+如：
   c  [number] motion
 ```
 
@@ -115,8 +142,26 @@ c 是一个更改命令，和`d`不同的是，删除对应的内容后，并切
 - cB 删除到前一个单词包括标点在内
 - c0 删除光标位置到本行开头
 - c\$ 删除光标位置到本行行尾
-- cd 删除一行
+- cc 删除一行
 - ncc 删除 N 行
+
+```shell
+例子：
+  3cc 删除三行并切换到编辑模式
+```
+
+## 选择文本
+
+- v 按`v`进入`visual` 模式， 然后按`:`，出现`:'<,'>`，在后面输入 `w TEST`，执行后，将选中的文本保存在`TEST`文件中
+- :'<,'>w TEST 选择文本并保存在 TEST 文件中
+
+## 插入编辑
+
+- o 在光标位置下一行新开一行，并切换到`insert`模式
+- O 在光标位置上一行新开一行，并切换到`insert`模式
+- a 在光标后插入内容
+- A 在当前行最后插入内容
+- i 在当前光标插入内容
 
 ## 查询替换
 
@@ -124,14 +169,9 @@ c 是一个更改命令，和`d`不同的是，删除对应的内容后，并切
 - n 匹配下一个查询
 - N 匹配上一个查询
 
-## 选择文本
-
-- v 按`v`进入`visual` 模式， 然后按`:`，出现`:'<,'>`，在后面输入 `w TEST`，执行后，将选中的文本保存在`TEST`文件中
-- :'<,'>w TEST 选择文本并保存在 TEST 文件中
-
 ```shell
-/error
-# 查询 "error" 字符串
+例子：
+/error # 查询 "error" 字符串
 ```
 
 - :s/old/new/g 全局匹配「old」并用「new」替换
@@ -144,14 +184,42 @@ c 是一个更改命令，和`d`不同的是，删除对应的内容后，并切
   To ask for confirmation each time add 'c'             :%s/old/new/gc
 ```
 
+- :set options 设置查询配置（忽略大小写，部分匹配，高亮）
+
+```shell
+  'ic'  'ignorecase'   ':set ic'    ignore upper/lower case when searching
+  'is'  'incsearch'    ':set is'    show partial matches for a search phrase
+  'hls' 'hlsearch'     ':set hls'   highlight all matching phrases
+
+  Prepend "no" to switch an option off:   `:set noic`
+```
+
 ## 执行外部命令
+
+```shell
+:!command # 执行外部命令
+```
 
 - :!ls 执行`ls`命令
 - :! w filename 先用 `v` 选中了内容，将保存选中的部分到 filename 中
 - :w filename 保存当前打开的文档到文件 filename
+- :r filename 读取 filename 文件内容到当前文件的光标位置
+- :!rm filename 删除 filename 文件
+
+## 查看帮助
+
+- `[F1]`
+- :help
+- :command 先输入`:e` 再按`CTRL + D` 查看以 `e` 为开头的命令
+- :help user-manual 查看用户手册
+
+```shell
+例子：
+  :help w 查看 w 相关的使用
+```
 
 ## 相关教程
 
 - 在终端执行 `vimtutor`命令，打开交互式教程，按照教程可以学习到最基础的内容。
+- [vim user manual](http://vimdoc.sourceforge.net/htmldoc/usr_toc.html)
 - [Vim 从入门到精通](https://github.com/wsdjeg/vim-galore-zh_cn#%E4%BB%80%E4%B9%88%E6%98%AF-vim)
-- [Vim 的操作小技巧](https://kaochenlong.com/2011/12/28/vim-tips/)

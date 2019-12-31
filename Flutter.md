@@ -73,3 +73,21 @@ Flutter 是一个由谷歌开发的开源移动应用软件开发工具包。用
 * flutter run
 * flutter build apk
 * flutter install -d deviceID
+
+## 学习进展
+* 引入router
+* 开发入库功能
+
+
+
+
+
+
+
+
+
+
+
+
+
+
