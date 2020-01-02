@@ -52,7 +52,7 @@ ng build --configuration=test
 ######################通用配置######################
 
 # 机器信息
-ip=10.199.0.93
+ip=xxxxx
 user=robot
 
 # 第一次免密登录
@@ -83,7 +83,7 @@ projectName=gtp-apk-files/src
 dist=./dist/$projectName/
 
 # 机器信息
-ip=10.199.0.93
+ip=xxxxxx
 user=robot
 
 # 第一次免密登录
