@@ -6,4 +6,5 @@
 * [Flutter](flutter.md)
 * [vim 常用命令](vim.md)
 * [liunx 常用命令](linux.md)
+* [创建一个第三方库](create-a-library.md)
 
