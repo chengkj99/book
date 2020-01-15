@@ -54,7 +54,7 @@
 
   内容更改替换
 
-- R
+- `R`
 
   在光标位置使用 R，将进入 `replace` 模式，输入的内容将原内容进行一一替换
 
@@ -65,9 +65,9 @@
 - `l` 右
 - `h` 左
 
-- e 向右逐词移动到下一个单词的结尾
-- w 向右逐词移动下一个单词的开头
-- b 向左逐词移动到下一个单词的开头
+- `e` 向右逐词移动到下一个单词的结尾
+- `w` 向右逐词移动下一个单词的开头
+- `b` 向左逐词移动到下一个单词的开头
 
 - `gg` 移动到文档顶部
 - `G` 移动至文档底部
@@ -153,11 +153,11 @@
 ## 选择文本
 
 - `v` 按`v`进入`visual` 模式， 然后按`:`，出现`:'<,'>`，在后面输入 `w TEST`，执行后，将选中的文本保存在`TEST`文件中
-- :'<,'>w TEST 选择文本并保存在 TEST 文件中
+- `:'<,'>w TEST` 选择文本并保存在 TEST 文件中
 
 ## 插入编辑
 
-- `o 在光标位置下一行新开一行，并切换到`insert`模式
+- `o` 在光标位置下一行新开一行，并切换到`insert`模式
 - `O` 在光标位置上一行新开一行，并切换到`insert`模式
 - `a` 在光标后插入内容
 - `A` 在当前行最后插入内容
@@ -174,7 +174,7 @@
 /error # 查询 "error" 字符串
 ```
 
-- :s/old/new/g 全局匹配「old」并用「new」替换
+- `:s/old/new/g` 全局匹配「old」并用「new」替换
 
 ```shell
   To substitute new for the first old in a line type    :s/old/new
@@ -184,7 +184,7 @@
   To ask for confirmation each time add 'c'             :%s/old/new/gc
 ```
 
-- :set options 设置查询配置（忽略大小写，部分匹配，高亮）
+- `:set options` 设置查询配置（忽略大小写，部分匹配，高亮）
 
 ```shell
   'ic'  'ignorecase'   ':set ic'    ignore upper/lower case when searching
@@ -205,11 +205,11 @@
 :!command # 执行外部命令
 ```
 
-- :!ls 执行`ls`命令
-- :! w filename 先用 `v` 选中了内容，将保存选中的部分到 filename 中
-- :w filename 保存当前打开的文档到文件 filename
-- :r filename 读取 filename 文件内容到当前文件的光标位置
-- :!rm filename 删除 filename 文件
+- `:!ls` 执行`ls`命令
+- `:! w` filename 先用 `v` 选中了内容，将保存选中的部分到 filename 中
+- `:w filename` 保存当前打开的文档到文件 filename
+- `:r filename` 读取 filename 文件内容到当前文件的光标位置
+- `:!rm filename` 删除 filename 文件
 
 ## 查看帮助
 
