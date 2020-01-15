@@ -194,6 +194,11 @@ c 是一个更改命令，和`d`不同的是，删除对应的内容后，并切
   Prepend "no" to switch an option off:   `:set noic`
 ```
 
+## 函数跳转
+
+- CTRL + ] 跳转至函数光标所在定义的地方
+- CTRL + T 原路返回
+
 ## 执行外部命令
 
 ```shell
