@@ -46,6 +46,6 @@ constructor(private appUpdate: AppUpdate) {
 
 修改 `config.xml` 的 version 在执行打包时，会将 `1.1.1` 解析为 `AndroidManifest.xml` 文件中的 `VersionCode`，且解析的规则为 `主版本号.次版本号.修订号 => 主版本 * 10000 + 次版本号 * 100 + 修订号 * 1`，即，这里的`1.1.1`被解析为了`100101`，这意味着 `version.xml` 文件中的版本号对应的最新的 `VersionCode`，而且要大于上一次发布的版本才能成功更新。
 
-## 应用更新升级流程示意图
+## Ionic APP 更新升级流程示意图
 
-![项目应用示意图](./images/megvii.png)
+![APP 更新升级流程示意图](./images/megvii.png)
