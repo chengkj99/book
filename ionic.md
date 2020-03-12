@@ -49,3 +49,36 @@ constructor(private appUpdate: AppUpdate) {
 ## Ionic APP 更新升级流程示意图
 
 ![APP 更新升级流程示意图](./images/megvii.png)
+
+## 使用 ionic hub 构建发布流程
+
+### 在 ionic hub 上创建同名的项目
+
+打开 `https://dashboard.ionicframework.com/personal/apps`，创建项目，如: z-test-tab
+
+### 链接本地项目和远程项目
+
+```shell
+ionic link
+```
+
+### 上传代码
+
+```shell
+git add .
+git commit -m "ci message"
+git push ionic master
+```
+
+## 自动密钥签名
+
+### 在 platforms/android 下创建 release-signing.properties 文件
+
+### 设置文件属性
+
+```properties
+keyAlias=ckj
+keyPassword=123456
+storePassword=123456
+storeFile=../../my-release-key.keystore
+```

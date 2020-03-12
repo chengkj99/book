@@ -4,6 +4,15 @@
 
 `cp sourcepath targetpath`
 
+## scp 复制
+
+```shell
+scp [可选参数] file_source file_target
+
+scp -r dist/* robot@10.1xx.0.xx:/home/robot/www/brain-plus/meg-brain
+```
+
+
 ## nohup 后台运行
 
 ```shell
