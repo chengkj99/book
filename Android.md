@@ -11,7 +11,6 @@ Android 调试桥 (adb) 是一种功能多样的命令行工具，可让您与�
 
 * adb install -r xxx.apk 强制重装
 
-
 ### 相关链接
 
 [Android 调试桥 (adb)](https://developer.android.com/studio/command-line/adb)
