@@ -11,14 +11,12 @@
 eval "$(ssh-agent -s)"
 
 # 2. Add the config to your ~/.ssh/config
-
 Host *
   AddKeysToAgent yes
   UseKeychain yes
   IdentityFile ~/.ssh/id_rsa
 
 # 3. Add your SSH private key to the ssh-agent
-
 ssh-add -K ~/.ssh/id_rsa
 
 ```
