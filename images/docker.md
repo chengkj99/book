@@ -111,6 +111,7 @@ Commands:
    - `docker image build -t ImageName:tag .` => `docker image build -t bulletinboard:1.0 .`
 
 3. Run Image And Generate Contaienr
+
    - `docker container run --publish 8888:8080 --detach --name bb bulletinboard:1.0`
    - --publish 8888:8080 将本地的端口号 8888 映射到容器端口号 8080
    - --detach 的意思是后台运行
@@ -118,3 +119,21 @@ Commands:
 
 4. 销毁容器实例
    - docker container rm --force bb
+
+## 日常操作
+
+### 进入 Container 实例
+
+- docker container exec -it [containerID] /bin/bash
+- docker exec -it dbt1.7 /bin/bash
+
+### 将 Container 实例的文件 copy 到本地
+
+- docker cp dbt1.7:/usr/src/app/dist ./dist
+
+### 删除容器实例
+
+- docker stop \$(docker ps -aq) 停止所有的容器
+- docker container ls -a 查看
+- docker container rm [containerID] 删除
+- docker container rm prune 删除所有停止运行的容器
