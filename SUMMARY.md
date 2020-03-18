@@ -10,4 +10,4 @@
 - [高阶函数应用](HigherOrderFunction.md)
 - [创建一个第三方库](create-a-library.md)
 - [Docker 命令](docker.md)
-- [git 相关](docker.md)
+- [git 相关](git.md)
