@@ -9,4 +9,4 @@
 - [Ionic 笔记](ionic.md)
 - [高阶函数应用](HigherOrderFunction.md)
 - [创建一个第三方库](create-a-library.md)
-- [Docker 命令](create-a-library.md)
+- [Docker 命令](docker.md)
