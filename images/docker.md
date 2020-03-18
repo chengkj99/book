@@ -137,3 +137,4 @@ Commands:
 - docker container ls -a 查看
 - docker container rm [containerID] 删除
 - docker container rm prune 删除所有停止运行的容器
+- docker run -it dbt:0.1 bash 运行镜像进入控制台
