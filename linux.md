@@ -39,6 +39,12 @@ kill -9 pid
 ssh user@ip 登录服务器
 ```
 
+## curl 文件上传
+
+```shell
+curl -F 'uploadsh=@./upload-apk.sh'  http://127.0.0.1:3000/upload
+```
+
 ## 实践
 
 ### 构建增量上传
