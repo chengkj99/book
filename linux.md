@@ -12,7 +12,6 @@ scp [可选参数] file_source file_target
 scp -r dist/* robot@10.1xx.0.xx:/home/robot/www/brain-plus/meg-brain
 ```
 
-
 ## nohup 后台运行
 
 ```shell
@@ -41,8 +40,20 @@ ssh user@ip 登录服务器
 
 ## curl 文件上传
 
+使用 curl -F (--form) 选项，会添加 `enctype=”multipart/form-data` 到请求头中
+
 ```shell
-curl -F 'uploadsh=@./upload-apk.sh'  http://127.0.0.1:3000/upload
+
+curl -F ‘data=@path/to/local/file’ UPLOAD_ADDRESS
+
+# 上传单个文件
+curl -F 'img_avatar=@/home/petehouston/hello.txt' http://localhost/upload
+
+# 上传多个文件
+curl -F 'fileX=@/path/to/fileX' -F 'fileY=@/path/to/fileY' ... http://localhost/upload
+
+# 上传文件数组
+curl -F 'files[]=@/path/to/fileX' -F 'files[]=@/path/to/fileY' ... http://localhost/upload
 ```
 
 ## 实践
