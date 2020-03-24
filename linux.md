@@ -26,6 +26,16 @@ ps -aux | grep nginx
 
 ```
 
+## 查看端口占用
+
+```shell
+# 查看所有端口
+netstat -ntlp
+
+# 查看指定端口
+netstat -ntulp | grep 8080
+```
+
 ## kill 杀掉进程
 
 ```shell
