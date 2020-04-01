@@ -12,5 +12,8 @@
 - [Docker 命令](docker.md)
 - [git 相关](git.md)
 
-- [algorithm](algorithm/README.md)
-  - [加一](algorithm/plus-one.md)
+- [算法](algorithm/README.md)
+  - [数组](algorithm/array/README.md)
+    - [加一](algorithm/array/plus-one.md)
+  - [设计](algorithm/design/README.md)
+    - [加一](algorithm/design/min-stack.md)
