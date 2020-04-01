@@ -11,3 +11,6 @@
 - [创建一个第三方库](create-a-library.md)
 - [Docker 命令](docker.md)
 - [git 相关](git.md)
+
+- [algorithm](algorithm/README.md)
+  - [加一](algorithm/plus-one.md)
