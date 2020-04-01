@@ -16,4 +16,4 @@
   - [数组](algorithm/array/README.md)
     - [加一](algorithm/array/plus-one.md)
   - [设计](algorithm/design/README.md)
-    - [加一](algorithm/design/min-stack.md)
+    - [最小栈](algorithm/design/min-stack.md)
