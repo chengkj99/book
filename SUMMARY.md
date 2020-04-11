@@ -17,3 +17,5 @@
     - [加一](algorithm/array/plus-one.md)
   - [设计](algorithm/design/README.md)
     - [最小栈](algorithm/design/min-stack.md)
+- [book](book/README.md)
+  - [我的第一步算法书](book/my-first-algorithm-book)
