@@ -17,3 +17,16 @@ Android 调试桥 (adb) 是一种功能多样的命令行工具，可让您与�
 ## Android Studio
 
 Android Studio 是一个为 Android 平台开发程序的集成开发环境。
+
+
+## gradle
+
+gradle 是一个自动化构建工具。
+
+在进行 React Native APK 打包时，由于 gradle 版本较低，导致打包失败。
+
+## ReactNative
+
+* expo init [APPName]
+* 打包配置（https://reactnative.dev/docs/signed-apk-android.html）
+* 执行构建命令 `cd android && gradle assembleRelease`
