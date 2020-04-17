@@ -164,3 +164,57 @@ function insertionSort(array) {
   return array;
 }
 ```
+
+### 归并排序
+
+把序列分成长度相同的两个子序列，当无法继续往下分时（也就是每个子序列只有一个数据时），就对子序列进行归并。归并是指把两个排列好的子序列合并成一个有序序列。重复执行该操作。
+
+将一整个序列，分段排序之后，进行一段一段的组装，组装过程中比较第一个数，将小的数加入新的数组中(由于是每一段都是从小到大排序的，当第一个数小于另一段中的第一个数，那么这个数也就小于这一小整段的数)，然后将剩下的数组进行连接。
+
+```js
+function mergeSort(array) {
+  if (array.length == 1) return array;
+  let len = array.length;
+  let mid = Math.floor(len / 2);
+  let left = array.slice(0, mid);
+  let right = array.slice(mid);
+  return merge(mergeSort(left), mergeSort(right)); // 将一个序列进行拆分
+}
+
+function merge(left, right) {
+  let temp = [];
+  while (left.length > 0 && right.length > 0) {
+    // 取第一个数比较，将较小的数放进数组，重复此操作完成合并
+    if (left[0] < right[0]) {
+      temp.push(left.shift());
+    } else {
+      temp.push(right.shift());
+    }
+  }
+  return temp.concat(left).concat(right); // 连接剩下的数组
+}
+```
+
+### 快速排序
+
+快速排序算法首先会在序列中随机选择一个基准值(pivot)，然后将除了基准值以外的数分为「比基准值小的数」和「比基准值大的数」这两个类别，再将其排列成以下形式。
+
+ [ 比基准值小的数 ] 基准值 [ 比基准值大的数 ]，递归这个操作。
+
+```js
+function quickSort(array) {
+  if (array.length < 1) return array;
+  let pivotIndex = Math.floor(array.length / 2);
+  let pivotValue = array.splice(pivotIndex, 1)[0];
+  let left = [];
+  let right = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] < pivotValue) {
+      left.push(array[i]);
+    } else {
+      right.push(array[i]);
+    }
+  }
+  return quickSort(left).concat([pivotValue], quickSort(right));
+}
+```
