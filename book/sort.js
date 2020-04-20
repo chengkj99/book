@@ -58,7 +58,6 @@ console.log(insertionSort(arr3))
 
 
 // 归并排序
-
 function mergeSort(array) {
   if (array.length == 1) return array;
   let len = array.length

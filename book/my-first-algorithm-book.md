@@ -146,7 +146,7 @@ function selectionSort(array) {
 
 ### 插入排序
 
-插入排序是一种从序列左端开始依次对数据进行排序的算法。在排序过程中，左侧的数据 陆续归位，而右侧留下的就是还未被排序的数据。插入排序的思路就是从右侧的未排序区域内 取出一个数据，然后将它插入到已排序区域内合适的位置上。
+插入排序是一种从序列左端开始依次对数据进行排序的算法。在排序过程中，左侧的数据陆续归位，而右侧留下的就是还未被排序的数据。插入排序的思路就是从右侧的未排序区域内 取出一个数据，然后将它插入到已排序区域内合适的位置上。
 
 ```js
 // 插入排序
@@ -218,3 +218,45 @@ function quickSort(array) {
   return quickSort(left).concat([pivotValue], quickSort(right));
 }
 ```
+
+## 数组的查找
+
+### 线性查找
+
+```js
+function lineSearch(array, target) {
+  for (let i = 0; i < array.length; i++) {
+    if (target === array[i]) {
+      return i
+    }
+  }
+}
+```
+
+### 二分查找
+
+```js
+function binarySearch(array, target) {
+  let start = 0
+  let end = array.length - 1
+  while (start < end) {
+    let mid = Math.floor(end - start / 2)
+    if (target > array[mid]) {
+      start = start + 1
+    } else if (target < array[mid]) {
+      end = end - 1
+    } else if (target === array[mid]) {
+      return mid
+    }
+  }
+  return -1
+}
+```
+
+### 选择哪种查找方式
+
+二分查找相比较于线性查找的效率是指数级的提升；二分查找的前提是已排序的数组，所以这要求数组在添加操作时，要求将数组加到对应的位置；
+
+线性查找是不要求数组的顺序，不限制操作方式。
+
+所以这两种的选择，**如果是查找多，操作少的情况下选择二分查找；如果是查找少操作多的情况下选择线性查找**。
