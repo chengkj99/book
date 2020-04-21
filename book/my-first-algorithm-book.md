@@ -199,7 +199,7 @@ function merge(left, right) {
 
 快速排序算法首先会在序列中随机选择一个基准值(pivot)，然后将除了基准值以外的数分为「比基准值小的数」和「比基准值大的数」这两个类别，再将其排列成以下形式。
 
- [ 比基准值小的数 ] 基准值 [ 比基准值大的数 ]，递归这个操作。
+[ 比基准值小的数 ] 基准值 [ 比基准值大的数 ]，递归这个操作。
 
 ```js
 function quickSort(array) {
@@ -227,7 +227,7 @@ function quickSort(array) {
 function lineSearch(array, target) {
   for (let i = 0; i < array.length; i++) {
     if (target === array[i]) {
-      return i
+      return i;
     }
   }
 }
@@ -237,19 +237,19 @@ function lineSearch(array, target) {
 
 ```js
 function binarySearch(array, target) {
-  let start = 0
-  let end = array.length - 1
+  let start = 0;
+  let end = array.length - 1;
   while (start < end) {
-    let mid = Math.floor(end - start / 2)
+    let mid = Math.floor(end - start / 2);
     if (target > array[mid]) {
-      start = start + 1
+      start = start + 1;
     } else if (target < array[mid]) {
-      end = end - 1
+      end = end - 1;
     } else if (target === array[mid]) {
-      return mid
+      return mid;
     }
   }
-  return -1
+  return -1;
 }
 ```
 
@@ -259,4 +259,63 @@ function binarySearch(array, target) {
 
 线性查找是不要求数组的顺序，不限制操作方式。
 
-所以这两种的选择，**如果是查找多，操作少的情况下选择二分查找；如果是查找少操作多的情况下选择线性查找**。
+所以这两种的选择，**如果是  查找多，操作少的情况下选择二分查找；如果是查找少操作多的情况下选择线性查找**。
+
+## 图的搜索
+
+### 什么是图
+
+这个图不是我们常说的「饼状图」、「柱状图」等等，而是指计算机中的图。计算机中的图的含义：由顶点和连接每对顶点的边所构成的图形就是图。
+
+#### 图可以表现各种关系
+
+通过图可以表示铁路线、网络拓扑结构、人和人之间的关系等等。
+
+#### 加权图
+
+我们还可以给边加上一个值，这个值叫作边的「权重」或者「权」。没有权的边只能表示两个顶点的连接状态，而有权的边就可以表示顶点之间的「连接程度」。这个「程度」可以根据图的内容含义代表着不同的含义，如：传输数据的时间、车票的价格、关系的密切程度等等。
+
+#### 有向图
+
+有时间两个点之间的链接是有方向的，这个时候构成有向图。比如：网络的链接就具有方向性。
+
+#### 图带给我们的便利
+
+在一些问题上：寻找计算机网络中通信时间最短的路径，寻找路线图中耗时最短的路径，寻找路线图中最省乘车费的路径等等，这类问题可以通过图来表示这些关系，这样我们就可以用解决图问题的算法解决看似不一样的问题了。
+
+#### 图的搜索算法
+
+- 广度优先搜索
+- 深度优先搜索
+
+### 广度优先搜索
+
+```js
+function bfs(root) {
+  let nodes = [];
+  let queue = [root];
+  while (queue.length > 0) {
+    let newQueue = [];
+    for (let i = 0; i < queue.length; i++) {
+      nodes.push(queue[i].key);
+      newQueue = newQueue.concat(queue[i].children);
+    }
+    queue = newQueue;
+  }
+  return nodes;
+}
+```
+
+### 深度优先搜索
+
+```js
+function dfs(root) {
+  let nodes = [];
+  if (!root) return [];
+  nodes.push(root.key);
+  root.children.forEach(node => {
+    nodes = nodes.concat(dfs(node));
+  });
+  return nodes;
+}
+```

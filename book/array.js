@@ -1,7 +1,6 @@
 // 数组的查找
 
 // 线性查找
-
 function lineSearch(array, target) {
   for (let i = 0; i < array.length; i++) {
     if (target === array[i]) {
@@ -17,6 +16,7 @@ const a = [5, 8, 2, 1, 2, 3, 4, 6, 8, 9]
 
 a.sort((a, b) => (a - b))
 
+// 递归
 function binarySearch(array, target, start = 0, end = array.length) {
   if (start > end) return -1
   let mid = Math.floor((end + start) / 2)
@@ -29,6 +29,7 @@ function binarySearch(array, target, start = 0, end = array.length) {
   }
 }
 
+// 迭代
 function binarySearch(array, target) {
   let start = 0
   let end = array.length - 1
