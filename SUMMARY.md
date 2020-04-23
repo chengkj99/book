@@ -19,4 +19,4 @@
   - [设计](algorithm/design/README.md)
     - [最小栈](algorithm/design/min-stack.md)
 - [book](book/README.md)
-  - [我的第一步算法书](book/my-first-algorithm-book)
+  - [我的第一本算法书](book/my-first-algorithm-book.md)
