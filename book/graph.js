@@ -60,7 +60,7 @@ console.log('max width: ', maxWidth(nodeGraph[0]))
 // 深度优先遍历
 function dfs(root) {
   let nodes = []
-  if(!root) return []
+  if (!root) return []
   nodes.push(root.key)
   root.children.forEach(node => {
     nodes = nodes.concat(dfs(node))
