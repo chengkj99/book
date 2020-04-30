@@ -93,3 +93,7 @@ timeTest().then(() => {
   alert('Time taken in milliseconds: ' + timeTaken); // timeTest1 9秒+，timeTest2 3秒+
 });
 ```
+
+相关链接
+
+- https://developer.mozilla.org/zh-CN/docs/learn/JavaScript/%E5%BC%82%E6%AD%A5/Choosing_the_right_approach
