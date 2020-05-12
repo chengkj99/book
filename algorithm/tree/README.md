@@ -3,6 +3,7 @@
 ## 树和二叉树在数据结构上的区别
 
 ```js
+// 普通树
 const tree = {
   key: 1,
   children: {
@@ -16,6 +17,7 @@ const tree = {
     }
   }
 };
+// 二叉树
 const binaryTree = {
   key: 1,
   left: {
@@ -93,6 +95,7 @@ function bfs(root) {
 ### 层序遍历
 
 <!-- 利用队列的方式 -->
+
 ```js
 function levelOrder(root) {
   if (!root) return [];
@@ -128,46 +131,46 @@ function dfs(root) {
 ### 前序遍历
 
 ```js
-  function preorderTraversal(root) {
-    if (!root) {
-      return []
-    }
-    let result = []
-    result.push(root.val)
-    result = result.concat(preorderTraversal(root.left))
-    result = result.concat(preorderTraversal(root.right))
-    return result
+function preorderTraversal(root) {
+  if (!root) {
+    return [];
   }
+  let result = [];
+  result.push(root.val);
+  result = result.concat(preorderTraversal(root.left));
+  result = result.concat(preorderTraversal(root.right));
+  return result;
+}
 ```
 
 ### 中序遍历
 
 ```js
-  function inorderTraversal(root) {
-    if (!root) {
-      return []
-    }
-    let result = []
-    result= result.concat(inorderTraversal(root.left))
-    result.push(root.val)
-    result = result.concat(inorderTraversal(root.right))
-    return result
+function inorderTraversal(root) {
+  if (!root) {
+    return [];
   }
+  let result = [];
+  result = result.concat(inorderTraversal(root.left));
+  result.push(root.val);
+  result = result.concat(inorderTraversal(root.right));
+  return result;
+}
 ```
 
 ### 后序遍历
 
 ```js
-  function postorderTraversal(root) {
-    if (!root) {
-      return []
-    }
-    let result = []
-    result = result.concat(postorderTraversal(root.left))
-    result = result.concat(postorderTraversal(root.right))
-    result.push(root.val)
-    return result
+function postorderTraversal(root) {
+  if (!root) {
+    return [];
   }
+  let result = [];
+  result = result.concat(postorderTraversal(root.left));
+  result = result.concat(postorderTraversal(root.right));
+  result.push(root.val);
+  return result;
+}
 ```
 
 ## 相关题
