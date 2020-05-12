@@ -225,6 +225,55 @@ function dfs(root) {
 }
 ```
 
+### 相关题
+
+#### 求二叉树的宽度
+
+```js
+function getTreeWidth(tree) {
+  let queue = [tree];
+  let maxMidth = 0;
+  while (queue.length > 0) {
+    let newQueue = [];
+    for (let i = 0; i < queue.length; i++) {
+      let left = queue[i].left;
+      let right = queue[i].right;
+      left && newQueue.push(left);
+      right && newQueue.push(right);
+    }
+    maxWidth = Math.max(maxMidth, newQueue.length);
+    queue = newQueue;
+  }
+  return maxWidth;
+}
+```
+
+#### 求二叉树的最大深度
+
+```js 求二叉树的深度
+function getTreeHight(tree) {
+  if (!tree) {
+    return 0;
+  }
+  let maxHeight = 0;
+  let leftH = getTreeHeight(tree.left);
+  let rightH = getTreeHeight(tree.right);
+
+  return leftH > rightH ? leftH : rightH;
+}
+```
+
+#### 镜像复制二叉树
+
+```js
+function mirrortCopyTree(tree) {
+  if (!tree) return null;
+  [tree.left, tree.right] = [tree.right, tree.left];
+  mirrortCopyTree(tree.right);
+  mirrortCopyTree(tree.left);
+}
+```
+
 ## 最优解算法
 
 ### 动态规划算法
