@@ -16,7 +16,7 @@ web workers 相当有用，但是他们确实也有局限。
 
 不能处理依赖，所以需要异步处理
 
-## callbacks
+## Callbacks
 
 例子： 异步 callback 就是 addEventListener()第二个参数
 
