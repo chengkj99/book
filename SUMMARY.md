@@ -23,3 +23,5 @@
   - [我的第一本算法书](book/my-first-algorithm-book.md)
 - [Interview](interview/README.md)
   - [异步JS](interview/async-js.md)
+  - [JS应用](interview/javascript.md)
+  - [Promise](interview/promise.md)
