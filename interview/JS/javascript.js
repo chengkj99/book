@@ -9,9 +9,11 @@ function bind(context, fn) {
 }
 
 Function.prototype.bind = function (context) {
-  let that = this
+  // 保存上下文执行环境
+  let self = this
   return function () {
-    that.apply(context, arguments)
+    // 动态绑定 context 的上下文执行环境和参数，并执行
+    self.apply(context, arguments)
   }
 }
 
