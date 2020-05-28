@@ -17,7 +17,6 @@ Function.prototype.bind = function (context) {
   }
 }
 
-
 // 实现一个函数节流 throttle，函数防抖 debounce
 
 // 防抖：在事件被触发 n 秒后再执行回调，如果在这 n 秒内又被触发，则重新计时。

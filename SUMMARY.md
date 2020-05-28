@@ -16,6 +16,7 @@
 - [算法](algorithm/README.md)
   - [数组](algorithm/array/README.md)
     - [加一](algorithm/array/plus-one.md)
+    - [存在重复](algorithm/array/contains-duplicate.md)
   - [树 & 二叉树](algorithm/tree/README.md)
   - [设计](algorithm/design/README.md)
     - [最小栈](algorithm/design/min-stack.md)
