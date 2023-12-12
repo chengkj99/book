@@ -1,9 +1,72 @@
-<mxfile host="app.diagrams.net" modified="2023-12-11T12:34:47.822Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" version="22.1.7" etag="zBWrEBZRascDnk7N3cSU" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-12T02:56:03.578Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="PN6GKujy3MmAHlr2ilB7" version="22.1.7" type="github">
   <diagram name="第 1 页" id="GGUch8PBxxLQfr5ORZUA">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="1955" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="tyBWiqdXj7CT22cmNioW-1" value="Chitu Cashier" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="570" width="130" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="tyBWiqdXj7CT22cmNioW-5" value="Yunchang Cashier" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="570" width="130" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="tyBWiqdXj7CT22cmNioW-6" value="Auth Page" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="485" y="570" width="130" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="tyBWiqdXj7CT22cmNioW-7" value="加油" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="-40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tyBWiqdXj7CT22cmNioW-8" value="租车" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="-40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tyBWiqdXj7CT22cmNioW-9" value="保险" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="-40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tyBWiqdXj7CT22cmNioW-10" value="线下保司" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="-40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tyBWiqdXj7CT22cmNioW-11" value="Solar Cashier" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="685" y="570" width="130" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="tyBWiqdXj7CT22cmNioW-31" value="Vuex" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="827" y="290" width="130" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="tyBWiqdXj7CT22cmNioW-25" value="Vuex" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="435" width="130" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="tyBWiqdXj7CT22cmNioW-27" value="Vue Instance" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="190" width="130" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="tyBWiqdXj7CT22cmNioW-28" value="Request Instance" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="100" width="130" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="tyBWiqdXj7CT22cmNioW-30" value="Vuex" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="350" width="130" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="tyBWiqdXj7CT22cmNioW-14" value="Vuex" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="100" width="130" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="tyBWiqdXj7CT22cmNioW-32" value="Raven" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="360" width="130" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="tyBWiqdXj7CT22cmNioW-13" value="abstractRoute" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="180" width="130" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="tyBWiqdXj7CT22cmNioW-33" value="Omega" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="250" width="130" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="tyBWiqdXj7CT22cmNioW-2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="330" width="640" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="tyBWiqdXj7CT22cmNioW-35" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;支付服务&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="887.5" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tyBWiqdXj7CT22cmNioW-36" value="DDPay Service" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="880" width="250" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="tyBWiqdXj7CT22cmNioW-37" value="Usercenter Service" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="880" width="250" height="45" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
