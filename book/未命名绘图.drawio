@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2023-12-12T09:45:22.523Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="fqTB_MGl35gjoO0EYv_F" version="22.1.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-12T09:47:43.223Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="Ls9Av4tKBYVYKwKZXJy5" version="22.1.7" type="github">
   <diagram name="第 1 页" id="GGUch8PBxxLQfr5ORZUA">
-    <mxGraphModel dx="1434" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1912" dy="1048" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="tyBWiqdXj7CT22cmNioW-110" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2ebecc;dashed=1;labelBackgroundColor=none;strokeColor=none;opacity=60;" vertex="1" parent="1">
-          <mxGeometry x="287" y="100" width="653" height="140" as="geometry" />
+          <mxGeometry x="287" y="100" width="673" height="140" as="geometry" />
         </mxCell>
         <mxCell id="tyBWiqdXj7CT22cmNioW-52" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2ecc3c;dashed=1;labelBackgroundColor=none;strokeColor=none;opacity=60;" vertex="1" parent="1">
           <mxGeometry x="990" y="441.25" width="170" height="398.75" as="geometry" />
@@ -50,13 +50,13 @@
           <mxGeometry x="311" y="120" width="180" height="50" as="geometry" />
         </mxCell>
         <mxCell id="tyBWiqdXj7CT22cmNioW-8" value="租车" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#2ebecc;strokeColor=none;fontSize=14;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
-          <mxGeometry x="527" y="120" width="180" height="50" as="geometry" />
+          <mxGeometry x="531" y="120" width="180" height="50" as="geometry" />
         </mxCell>
         <mxCell id="tyBWiqdXj7CT22cmNioW-9" value="保险" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#2ebecc;strokeColor=none;fontSize=14;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
-          <mxGeometry x="744" y="120" width="180" height="50" as="geometry" />
+          <mxGeometry x="750" y="120" width="180" height="50" as="geometry" />
         </mxCell>
         <mxCell id="tyBWiqdXj7CT22cmNioW-10" value="线下业务&lt;br&gt;（保司）" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#2ebecc;strokeColor=none;fontSize=14;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
-          <mxGeometry x="961" y="100" width="180" height="140" as="geometry" />
+          <mxGeometry x="981" y="100" width="180" height="140" as="geometry" />
         </mxCell>
         <mxCell id="tyBWiqdXj7CT22cmNioW-28" value="Chitu Cashier Class" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#2ecc71;strokeColor=none;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="325" y="310" width="240" height="45" as="geometry" />
@@ -141,8 +141,8 @@
         </mxCell>
         <mxCell id="tyBWiqdXj7CT22cmNioW-82" value="" style="endArrow=none;dashed=1;html=1;rounded=0;labelBackgroundColor=none;fontColor=default;strokeColor=#2E89CC;strokeWidth=2;opacity=30;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="160" y="980" as="sourcePoint" />
-            <mxPoint x="1220" y="980" as="targetPoint" />
+            <mxPoint x="65" y="980" as="sourcePoint" />
+            <mxPoint x="1160" y="980" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="tyBWiqdXj7CT22cmNioW-85" value="loading组件&lt;br&gt;pay-loading" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#5ecc2e;fontColor=#FFFFFF;fontStyle=1;strokeColor=none;" vertex="1" parent="1">
@@ -174,8 +174,8 @@
         </mxCell>
         <mxCell id="tyBWiqdXj7CT22cmNioW-106" value="" style="endArrow=none;html=1;rounded=0;labelBackgroundColor=none;fontColor=#FFFFFF;strokeColor=#2EBECC;fontStyle=1;dashed=1;strokeWidth=2;opacity=30;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="181" y="260" as="sourcePoint" />
-            <mxPoint x="1241" y="260" as="targetPoint" />
+            <mxPoint x="65" y="260" as="sourcePoint" />
+            <mxPoint x="1160" y="260" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="tyBWiqdXj7CT22cmNioW-108" value="Bridge 通信&lt;br&gt;bridge(h5 &amp;amp; native)" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#FFFFFF;fontStyle=1;fillColor=#2ecc3c;strokeColor=none;opacity=80;" vertex="1" parent="1">
@@ -197,7 +197,7 @@
           <mxGeometry x="65" y="1010" width="150" height="70" as="geometry" />
         </mxCell>
         <mxCell id="tyBWiqdXj7CT22cmNioW-129" value="solar 聚合收银台" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#218791;strokeColor=none;fontSize=14;fontStyle=1;fontColor=#FFFFFF;opacity=60;" vertex="1" parent="1">
-          <mxGeometry x="308" y="180" width="609" height="50" as="geometry" />
+          <mxGeometry x="308" y="180" width="622" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
