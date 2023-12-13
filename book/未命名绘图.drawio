@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-12T10:01:31.204Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="YC7rAqdJFcMuYPFPIU5k" version="22.1.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-13T02:20:19.917Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="gaCHI7O7N22orffF6hHb" version="22.1.7" type="github">
   <diagram name="第 1 页" id="GGUch8PBxxLQfr5ORZUA">
-    <mxGraphModel dx="1687" dy="925" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1366" dy="749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -32,7 +32,7 @@
           <mxGeometry x="285" y="441.25" width="695" height="242.75" as="geometry" />
         </mxCell>
         <mxCell id="tyBWiqdXj7CT22cmNioW-49" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#5ECC2E;dashed=1;labelBackgroundColor=none;strokeColor=none;opacity=60;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="303.75" y="455.12" width="657.5" height="97.5" as="geometry" />
+          <mxGeometry x="300" y="455.12" width="660" height="97.5" as="geometry" />
         </mxCell>
         <mxCell id="tyBWiqdXj7CT22cmNioW-39" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2ECC71;labelBackgroundColor=none;strokeColor=#E6FFCC;opacity=60;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="285" y="280" width="875" height="150" as="geometry" />
@@ -64,26 +64,23 @@
         <mxCell id="tyBWiqdXj7CT22cmNioW-14" value="YunchangBase(初始化 vue 实例、store实例、Request Adapter，并注册onOpen、onError等方法)" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#2ecc71;strokeColor=none;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="326" y="370" width="814" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="tyBWiqdXj7CT22cmNioW-2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;dashed=1;labelBackgroundColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1520" y="420" width="640" height="380" as="geometry" />
-        </mxCell>
         <mxCell id="tyBWiqdXj7CT22cmNioW-40" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#5ECC2E;dashed=1;labelBackgroundColor=none;strokeColor=#5ecc2e;opacity=60;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="292.5" y="572.62" width="660" height="97.5" as="geometry" />
+          <mxGeometry x="300" y="572.62" width="660" height="97.5" as="geometry" />
         </mxCell>
-        <mxCell id="tyBWiqdXj7CT22cmNioW-41" value="复选框&lt;br&gt;check-box" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#5ecc2e;fontColor=#FFFFFF;fontStyle=1;strokeColor=none;" vertex="1" parent="1">
-          <mxGeometry x="323" y="598.87" width="120" height="45" as="geometry" />
+        <mxCell id="tyBWiqdXj7CT22cmNioW-41" value="复选框&lt;br&gt;check-box" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#5ecc2e;fontColor=#FFFFFF;fontStyle=1;strokeColor=none;flipH=0;" vertex="1" parent="1">
+          <mxGeometry x="326" y="600.12" width="116" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="tyBWiqdXj7CT22cmNioW-43" value="验密组件&lt;br&gt;base-password" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#5ecc2e;fontColor=#FFFFFF;fontStyle=1;strokeColor=none;" vertex="1" parent="1">
-          <mxGeometry x="448" y="598.87" width="120" height="45" as="geometry" />
+        <mxCell id="tyBWiqdXj7CT22cmNioW-43" value="验密组件&lt;br&gt;base-password" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#5ecc2e;fontColor=#FFFFFF;fontStyle=1;strokeColor=none;flipH=0;" vertex="1" parent="1">
+          <mxGeometry x="451" y="598.87" width="116" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="tyBWiqdXj7CT22cmNioW-44" value="金额标题组件&lt;br&gt;amount-header" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#5ecc2e;fontColor=#FFFFFF;fontStyle=1;strokeColor=none;" vertex="1" parent="1">
-          <mxGeometry x="573" y="598.87" width="120" height="45" as="geometry" />
+        <mxCell id="tyBWiqdXj7CT22cmNioW-44" value="金额标题组件&lt;br&gt;amount-header" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#5ecc2e;fontColor=#FFFFFF;fontStyle=1;strokeColor=none;flipH=0;" vertex="1" parent="1">
+          <mxGeometry x="577" y="598.87" width="116" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="tyBWiqdXj7CT22cmNioW-46" value="键盘组件&lt;br&gt;base-keyboard" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#5ecc2e;fontColor=#FFFFFF;fontStyle=1;strokeColor=none;" vertex="1" parent="1">
-          <mxGeometry x="697" y="598.87" width="120" height="45" as="geometry" />
+        <mxCell id="tyBWiqdXj7CT22cmNioW-46" value="键盘组件&lt;br&gt;base-keyboard" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#5ecc2e;fontColor=#FFFFFF;fontStyle=1;strokeColor=none;flipH=0;" vertex="1" parent="1">
+          <mxGeometry x="702" y="598.87" width="116" height="45" as="geometry" />
         </mxCell>
         <mxCell id="tyBWiqdXj7CT22cmNioW-47" value="组件 components" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="573.75" y="570.12" width="117.5" height="30" as="geometry" />
+          <mxGeometry x="581.25" y="570.12" width="117.5" height="30" as="geometry" />
         </mxCell>
         <mxCell id="tyBWiqdXj7CT22cmNioW-50" value="页面容器组件 views" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="569.5" y="455.12" width="130" height="30" as="geometry" />
@@ -145,8 +142,8 @@
             <mxPoint x="1160" y="980" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="tyBWiqdXj7CT22cmNioW-85" value="loading组件&lt;br&gt;pay-loading" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#5ecc2e;fontColor=#FFFFFF;fontStyle=1;strokeColor=none;" vertex="1" parent="1">
-          <mxGeometry x="822" y="598.87" width="120" height="45" as="geometry" />
+        <mxCell id="tyBWiqdXj7CT22cmNioW-85" value="loading组件&lt;br&gt;pay-loading" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#5ecc2e;fontColor=#FFFFFF;fontStyle=1;strokeColor=none;flipH=0;" vertex="1" parent="1">
+          <mxGeometry x="827.5" y="598.87" width="116" height="45" as="geometry" />
         </mxCell>
         <mxCell id="tyBWiqdXj7CT22cmNioW-86" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;视图交互层&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="170" y="561.75" width="100" height="30" as="geometry" />
