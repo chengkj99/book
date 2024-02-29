@@ -1,9 +1,18 @@
-<mxfile host="app.diagrams.net" modified="2024-02-29T07:09:10.204Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" version="23.1.8" etag="ZNGVm0h6-Ubu803h7X55" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-29T07:15:20.863Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="FqtlSScQxxlZXFZ3PR9V" version="23.1.8" type="github">
   <diagram name="第 1 页" id="NesA2y06wdZZyrnUfi4t">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="J8ANrcXyntHdoeguItRU-2" value="源站域名&lt;br&gt;ddpya.xiaojukeji.com" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="310" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="J8ANrcXyntHdoeguItRU-3" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="414" y="240" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="J8ANrcXyntHdoeguItRU-4" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="414" y="380" width="60" height="80" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
